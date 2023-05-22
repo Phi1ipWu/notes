@@ -6,9 +6,10 @@ npm init
 
 
 <h3>2. 安装 TypeScript</h3>
+<p>
 npm install typescript --save-dev
 npx tsc --version
-
+</p>
 
 <h3>3. 安装 Node.js 内置类型声明</h3>
 npm install @types/node --save-dev
@@ -19,24 +20,24 @@ npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModul
 
 
 <h3>5. 创建 src/main.ts</h3>
-<strong>mac: </strong>
+<p><strong>mac: </strong>
 mkdir src
 echo 'console.log("Hello world!")' > src/main.ts
+</p>
 
-<strong>win: </strong>
+<p><strong>win: </strong>
 md src
 copy con src\main.ts
 console.log("Hello world!")
 ^z
-
+</p>
 
 <h3>6. 通过 npx tsc 来编译项目工程 (编译后在 build 目录下可以看到 js 文件)</h3>
-npx tsc
+<p>npx tsc
 node ./build/main.js
-
+</p>
 
 <h3>7. 修改 package.json，来支持 npm run build 和 npm start 命令</h3>
-```json
 "scripts": {
   "build": "tsc",
   "start": "tsc && node ./build/main.js"
