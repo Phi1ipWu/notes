@@ -2,12 +2,12 @@
 
 
 <h3>1. npm 初始化项目</h3>
-<p>npm init</p>
+npm init
 
 
 <h3>2. 安装 TypeScript</h3>
-<p>npm install typescript --save-dev</p>
-<p>npx tsc --version</p>
+npm install typescript --save-dev
+npx tsc --version
 
 
 <h3>3. 安装 Node.js 内置类型声明</h3>
@@ -19,11 +19,11 @@ npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModul
 
 
 <h3>5. 创建 src/main.ts</h3>
-mac: 
+<strong>mac: </strong>
 mkdir src
 echo 'console.log("Hello world!")' > src/main.ts
 
-win:
+<strong>win: </strong>
 md src
 copy con src\main.ts
 console.log("Hello world!")
@@ -36,6 +36,7 @@ node ./build/main.js
 
 
 <h3>7. 修改 package.json，来支持 npm run build 和 npm start 命令</h3>
+```json
 "scripts": {
   "build": "tsc",
   "start": "tsc && node ./build/main.js"
@@ -43,7 +44,7 @@ node ./build/main.js
 
 
 <h3>附录</h3>
-1. npm install有以下几种方式：
+<h3>1. npm install有以下几种方式：</h3>
 npm install moduleName # 安装模块到项目目录下
 npm install -g moduleName # -g 的意思是将模块安装到全局，具体安装到磁盘哪个位置，要看 npm config prefix 的位置。
 npm install --save moduleName # --save 的意思是将模块安装到项目目录下，并在package文件的dependencies节点写入依赖。
