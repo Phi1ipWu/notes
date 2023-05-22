@@ -2,12 +2,12 @@
 
 
 <h3>1. npm 初始化项目</h3>
-npm init
+<p>npm init</p>
 
 
 <h3>2. 安装 TypeScript</h3>
-npm install typescript --save-dev
-npx tsc --version
+<p>npm install typescript --save-dev</p>
+<p>npx tsc --version</p>
 
 
 <h3>3. 安装 Node.js 内置类型声明</h3>
