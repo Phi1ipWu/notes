@@ -48,9 +48,8 @@
 <p>总结为一句话：运行时需要用到的包使用––save，否则使用––save-dev。</p>
 
 
-
-<p>引用出处：</p>
+<h3>引用出处：</h3>
 <p>https://shixiongfei.com/typescript-startup.html</p>
 
-<p>tsconfig配置参考：</p>
+<h3>tsconfig配置参考：</h3>
 <p>https://www.typescriptlang.org/</p>
