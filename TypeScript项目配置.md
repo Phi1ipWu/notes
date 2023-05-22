@@ -35,12 +35,13 @@
 <h3>7. 修改 package.json，来支持 npm run build 和 npm start 命令</h3>
 <p>"scripts": {</p>
 <p>  "build": "tsc",</p>
-<p>  "start": "tsc && node ./build/main.js"<p>},
+<p>  "start": "tsc && node ./build/main.js"</p>
+<p>},</p>
 
 
 <h3>附录</h3>
 <h3>1. npm install有以下几种方式：</h3>
-<p>pm install moduleName # 安装模块到项目目录下</p>
+<p>npm install moduleName # 安装模块到项目目录下</p>
 <p>npm install -g moduleName # -g 的意思是将模块安装到全局，具体安装到磁盘哪个位置，要看 npm config prefix 的位置。</p>
 <p>npm install --save moduleName # --save 的意思是将模块安装到项目目录下，并在package文件的dependencies节点写入依赖。</p>
 <p>npm install --save-dev moduleName # --save-dev 的意思是将模块安装到项目目录下，并在package文件的devDependencies节点写入依赖。</p>
